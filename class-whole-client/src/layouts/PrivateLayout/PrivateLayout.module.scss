@@ -1,0 +1,35 @@
+.privateLayout{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.siderWrapper{
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.25s ease;
+  &.open{
+    transform: translateX(0);
+  }
+}
+
+.pad{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  &.show{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+

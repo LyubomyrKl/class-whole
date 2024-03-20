@@ -1,0 +1,10 @@
+@import "src/consts/colors";
+
+.appLink{
+
+  color: $linkBlue;
+  width: 100%;
+  &:visited{
+    color: $linkBlue;
+  }
+}

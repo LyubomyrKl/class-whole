@@ -1,0 +1,23 @@
+@import './src/consts/colors';
+
+.lineWithText{
+  position: relative;
+  width: 100%;
+  &::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $gray;
+  }
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    border-radius: 100px;
+  }
+}
+

@@ -1,0 +1,15 @@
+@import 'src/consts/colors';
+
+.button{
+  width: 100%;
+  background-color: $darkBlue;
+  border-color: $darkBlue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: $blue;
+  }
+}

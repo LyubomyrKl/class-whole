@@ -1,0 +1,146 @@
+@import "src/consts/colors";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{
+    display: block;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), url("./fonts/Nunito/Nunito-Regular.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 200;
+    src: local('Nunito'), url("./fonts/Nunito/Nunito-ExtraLight.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 300;
+    src: local('Nunito'), url("./fonts/Nunito/Nunito-Light.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 500;
+    src: local('Nunito'), url("./fonts/Nunito/Nunito-Medium.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 600;
+    src: local('Nunito'), url("./fonts/Nunito/Nunito-SemiBold.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 700;
+    src: local('Nunito'), url("./fonts/Nunito/Nunito-Bold.ttf") format('opentype');
+}
+
+
+body{
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+.title{
+    font-size: 36px;
+}
+
+.description{
+    font-size: 16px;
+}
+
+.errorMessage{
+    color: $red
+
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.text-align-center{
+    text-align: center;
+}

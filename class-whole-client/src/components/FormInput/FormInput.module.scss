@@ -1,0 +1,34 @@
+@import "src/consts/colors";
+.formInputWrapper{
+  margin-bottom: 15px;
+}
+
+.formInputLabelWrapper{
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.formInputLabel{
+  display: block;
+  margin-right: 10px;
+}
+
+.formInput{
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid $darkGray;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+  &.error{
+    border-color: $red;
+    &:focus{
+      border-color: $red;
+    }
+  }
+
+
+  &.success{
+    border-color: $green;
+  }
+}
